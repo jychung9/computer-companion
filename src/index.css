@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Antic+Slab&family=Anton&display=swap');
+
+
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100vh;
+}
+
+p {
+	font-size: 18px;
+}
+
+nav {
+	background-color: rgb(247, 247, 255);
+	display: flex;
+	position: sticky;
+}
+
+.navbar-brand {
+	padding-left: 2rem;
+	font-size: 1.75rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover, nav a:focus {
+	color: black;
+	border-bottom: .8rem #0d6efd;
+	border-bottom-style: solid;
+	transition: .25s ease-out;
+}
+
+nav ul li {
+	list-style-type: none;
+	float: left;
+}
+
+
+.nav-link {
+    font-size: 1.8rem;
+    display: block;
+	width: 200px;
+	font-family: 'Raleway', sans-serif;
+	line-height: 50px;
+	margin: 0px 0px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+/* Home Page */
+#homeopener {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('../public/imgs/pcsetup.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 900px;
+	margin: -4rem -4rem 0rem;
+	height: auto;
+
+}
+
+#welcoming {
+	padding-top: 16rem;
+	color: white;
+	justify-content: center;
+	text-align: center;
+}
+
+#welcoming a {
+	margin-top: 1.5rem;
+}
+
+.page-description {
+	line-height: 2;
+}
+
+figure {
+    padding-left: 2rem;
+    padding-right: 5rem;
+}
+
+/* Deals Page */
+.deals-header-img {
+    background-image: url('../public/imgs/keyboard.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	min-height: 400px;
+	margin: -4rem 0 2rem;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Submit Deals Form */
+.form-group {
+	margin-top: 20px;
+}
+
+.form-group label {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.1rem;
+}
+
+.display-4,
+.lead {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding-top: 1.5rem;
+}
+
+.display-7 {
+	font-size: 1.7rem;
+	margin-top: 4rem;
+}
+
+.chart-xlabel {
+	padding-left: 29rem;
+}
+
+body {
+	background-color: rgb(247, 247, 255);
+}
+
+main {
+    padding: 3rem;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flexDisplay {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+button {
+	margin-top: 1.25rem;
+    margin-bottom: 1.15rem;
+	padding-bottom: 3rem;
+}
+
+footer {
+	color: black;
+	background-color: rgb(185, 185, 202);
+	line-height: 1rem;
+	font-size: 18px;
+	margin-top: +15rem;
+	padding: 1.5rem;
+}
+
+.col-4 {
+	font-family: 'Andada', 'sans-serif';
+}
+
+.card-body {
+	flex-wrap: wrap;
+}
+
+tbody tr:nth-of-type(even) {
+	background-color: hsl(157, 100%, 88%);
+}
+
+tbody tr:nth-of-type(odd) {
+	background-color: rgb(247, 247, 255);
+}
+
+.sm-extra {
+	display: none;
+}
+
+.lg-extra {
+	display: none;
+}
+
+.buy-button {
+	padding: 12px 24px;
+	font-size: 24px;
+	font-style: bold;
+}
+
+.tiny-screen {
+	font-size: 28px;
+}
+
+.lg-extra-price {
+	color: green;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+@media(min-width: 375px) {
+
+	.lg-extra-oprice {
+		display: none;
+	}
+	
+	.opriceDeal {
+		display: none;
+	}
+
+	.lg-extra-seller {
+		display: none;
+	}
+
+	.sellerDeal {
+		display: none;
+	}
+
+	.detailDeal {
+		display: none;
+	}
+
+	.buy-button {
+		font-size: 22px;
+	}
+
+	.lg-extra-price {
+		font-size: 19px;
+	}
+}
+
+@media(min-width: 576px) {
+
+	.lg-extra-oprice {
+		display: table-cell;
+	}
+
+	.opriceDeal {
+		display: none;
+	}
+
+	.lg-extra-seller {
+		display: table-cell;
+	}
+
+	.sellerDeal {
+		display: none;
+	}
+
+	.detailDeal {
+		display: none;
+	}
+    
+	.buy-button {
+		font-size: 20px;
+	}
+
+	.lg-extra-price {
+		font-size: 20px;
+	}
+}
+
+@media(min-width: 992px) {
+
+
+	.lg-extra-oprice {
+		display: table-cell;
+	}
+	.opriceDeal {
+		display: table-cell;
+	}
+	
+	.lg-extra-seller {
+		display: table-cell;
+	}
+
+	.sellerDeal {
+		display: table-cell;
+	}
+
+	.detailDeal {
+		display: table-cell;
+	}
+    
+    .nav-link {
+        font-size: 1.2rem;
+	}
+
+	.buy-button {
+		font-size: 15px;
+	}
+
+	.lg-extra-price {
+		font-size: 22px;
+	}
+
+}

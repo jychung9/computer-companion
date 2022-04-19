@@ -1,0 +1,15 @@
+{
+    "deals" : {
+        "component" : {
+            "GPU" : {
+                "RTX 2060 SUPER" : {
+                    "Original Price" : 499.99,
+                    "Current Sale Price" : 402.34,
+                    "Seller" : "Amazon",
+                    "Link" : "something.com",
+                    "Additional Details" : "New"
+                }
+            }
+        }
+    }
+}

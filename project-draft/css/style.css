@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav {
+    background-color: rgb(247, 247, 255);
+    display: flex;
+    position: sticky;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+    font-size: 1.75rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover, nav a:focus {
+    color: black;
+    border-bottom: .8rem black;
+    border-bottom-style: solid;
+    transition: .25s ease-out;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    width: 200px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 50px;
+    margin: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Home Page */
+#homeopener {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../img/pcsetup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    margin: -4rem -4rem 2rem;
+    
+}
+
+#welcoming {
+    padding-top: 16rem;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcoming a {
+    margin-top: 1.5rem;
+}
+
+.page-description {
+    line-height: 2;
+}
+
+/* Deals Page */
+.deals-header {
+    padding-top: 5rem;
+}
+
+
+/* Submit Deals Form */
+.form-group {
+    margin-top: 20px;
+}
+.form-group label {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+.card-title, p.check-off {
+    font-family: 'Antic Slab', serif;
+    text-shadow: 5px 5px 5px #c8e6c9;
+}
+
+.display-4, .lead{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-label, .form-check-label {
+    font-family: 'Andada Pro', serif;
+    margin: auto;
+}
+
+.form-check-label:hover {
+    color: #c8e6c9;
+}
+
+body {
+    background-color: rgb(247, 247, 255);
+}
+
+main {
+    padding: 4rem;
+}
+
+button {
+    margin-top: 1.25rem;
+    padding-bottom: 3rem;
+}
+
+footer {
+    color: black;
+    background-color: rgb(185, 185, 202);
+
+}
+
+.card-body {
+    flex-wrap: wrap;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: hsl(157, 100%, 88%);
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(247, 247, 255);
+}
+
+.sm-extra {
+    display: none;
+}
+
+.lg-extra {
+    display: none;
+}
+
+.buy-button {
+    padding: 12px 24px;
+    font-size: 24px;
+    font-style: bold;
+}
+
+.tiny-screen {
+    font-size: 28px;
+}
+
+.current-price {
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.log-in {
+    background-color:  #82b74b;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.trending {
+    display: none;
+    background-color: #94af76;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+@media(min-width: 576px) {
+    .sm-extra{
+        display: table-cell;
+    }
+
+    .trending {
+        display: inline-block;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        background-color: white;
+        width: 50%;
+    }
+
+    .trending img {
+        height: auto;
+        width: 200px;
+    }
+
+    .trending .card-title {
+        text-shadow: none;
+    }
+
+    .log-in {
+        width: 50%;
+    }
+}
+@media(min-width: 992px) {
+    .lg-extra{
+        display: table-cell;
+    }
+    .buy-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .tiny-screen {
+        font-size: 18px;
+    }
+
+    .current-price {
+        font-size: 18px;
+    }
+
+}
